@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="intro"></div>
+            <div class="before-quiz">
+                <button class="start-button" onclick="startQuiz()">Rozpocznij quiz</button>
+                <div class="best-results"></div>
+            </div>
+            <div class="quiz">
+                <div class="question-number-wrapper"></div>
+                <div class="penalty-wrapper"></div>
+                <div class="timer-wrapper"></div>
+                <div class="question"></div>
+                <div class="answer-wrapper">
+                    <label for="answer">odpowiedź:</label>
+                    <input type="number" id="answer">
+                </div>
+                <div class="buttons">
+                    <button class="button-prev" onclick="previousQuestion()">Poprzednie pytanie</button>
+                    <button class="button-next" onclick="nextQuestion()">Następne pytanie</button>
+                    <button class="button-finish" onclick="finishQuiz()">Zakończ</button>
+                    <button class="button-cancel" onclick="startScreen()">Anuluj quiz</button>
+                </div>
+            </div>
+            <div class="after-quiz">
+                <div class="result"></div>
+                <div class="raport"></div>
+                <div>
+                    <label for="save">Zapisać podejście?</label>
+                    <input type="checkbox" id="save" checked>
+                </div>
+                <button class="return" onclick="returnToStart()">Powrót</button>
+            </div>
+        </div>
+    </main>
+    <footer>kocham anime</footer>
+    <script src='main.js'></script>
+</body>
+</html>
